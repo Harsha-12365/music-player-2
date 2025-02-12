@@ -1,0 +1,188 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f0f2f5;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.music-player {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+}
+
+.player-header {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+#searchInput, #categoryFilter {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+#searchInput {
+    flex: 1;
+}
+
+#categoryFilter {
+    width: 150px;
+}
+
+.player-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.current-song-info {
+    text-align: center;
+}
+
+#albumArt {
+    width: 300px;
+    height: 300px;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    object-fit: cover;
+}
+
+#songTitle {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#artistName {
+    color: #666;
+}
+
+.controls {
+    width: 100%;
+    max-width: 600px;
+}
+
+.progress-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.progress-bar {
+    flex: 1;
+    height: 4px;
+    background: #ddd;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.progress {
+    height: 100%;
+    background: #4a90e2;
+    border-radius: 2px;
+    width: 0%;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #333;
+    transition: color 0.3s;
+}
+
+button:hover {
+    color: #4a90e2;
+}
+
+#playPauseBtn {
+    font-size: 2rem;
+}
+
+.volume-control {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#volumeSlider {
+    width: 100px;
+}
+
+.playlist {
+    margin-top: 2rem;
+    border-top: 1px solid #ddd;
+    padding-top: 2rem;
+}
+
+.playlist h3 {
+    margin-bottom: 1rem;
+}
+
+#playlistItems {
+    list-style: none;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.playlist-item {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.playlist-item:hover {
+    background-color: #f5f5f5;
+}
+
+.playlist-item.active {
+    background-color: #e3f2fd;
+}
+
+.playlist-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    margin-right: 1rem;
+}
+
+.song-info {
+    flex: 1;
+}
+
+.song-info h4 {
+    margin-bottom: 0.25rem;
+}
+
+.song-info p {
+    color: #666;
+    font-size: 0.9rem;
+}
